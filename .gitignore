@@ -38,3 +38,9 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# for MongoDB folder
+app/mongodb/**
+!app/mongodb/properties2.json
+
+

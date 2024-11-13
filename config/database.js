@@ -10,10 +10,12 @@ const connectDB = async () => {
     console.log('MongoDB is already connected');
     return;
   }
+
+  // Connect to MongoDB
   try {
     await mongoose.connect(process.env.MONGODB_URI);
     connected = true;
-    console.log('MongoDB connected');
+    console.log('MongoDB is connected');
   } catch (error) {
     console.log(error);
     throw new Error('MongoDB connection failed');
